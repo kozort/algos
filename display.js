@@ -11,9 +11,10 @@ class SLL {
     }
     display() {
         str = "List of Values = "
-        while (this.head != null){
-            str += this.head.value;
-            this.head = this.next;
+        while (runner != null){
+            str += "; " + runner.value;
+
+            runner = runner.next;
         }
         return str
     }
